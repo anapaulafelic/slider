@@ -12,6 +12,13 @@ body {
   font-size: 16px;
 }
 
+section#slider {
+  margin: 0 auto;
+  padding: 10px;
+  display: grid;
+  place-items: center;
+}
+
 .fonte {
   line-height: 16px;
 }
@@ -37,6 +44,28 @@ body {
   /* height: 645px; */
   pointer-events: none;
   /* desativando a captura de eventos desse item */
+}
+
+
+@media (max-width: 992px) {
+  #items-wrapper {
+    width: calc(100% - 20px);
+  }
+  .item {
+    flex: none;
+    width: 100%;
+    height: 400px;
+    scroll-snap-align: start;
+    /* height: 645px; */
+    pointer-events: none;
+    /* desativando a captura de eventos desse item */
+  }
+  .fonte {
+    line-height: 1.8rem;
+  }
+  .fonte h1 {
+    padding-bottom: 0.8rem;
+  }
 }
 
 img {

@@ -5,4 +5,5 @@ if(event.deltaY > 0 ){
 } else {
   event.target.scrollBy(-300, 0) /* eixo X e  Y */
 }
+
 })
